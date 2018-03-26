@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "859547391084",
+    "firebase_url": "https://campusrecsys-ed66f.firebaseio.com",
+    "project_id": "campusrecsys-ed66f",
+    "storage_bucket": "campusrecsys-ed66f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:859547391084:android:9fb33380a7b48d8a",
+        "android_client_info": {
+          "package_name": "com.example.faizrehman.campus_recruitment_system"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "859547391084-fs360bjvgk5m05lj605ee86a3k05t1di.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC82M4zqeuGQtqU00ET0ORy-JtUYMLGDTM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.faizrehman.campus_recruitment_system.ui.LoginActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/c"
+
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#fff"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="1dp"
+            android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="10dp"
+        android:src="@drawable/icon_person_free_reg" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editText_Loginemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center_horizontal"
+            android:hint="Email"
+            android:background="#fff"
+            android:fontFamily="sans-serif-light"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:nextFocusDown="@+id/editText_userID"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="14sp" />
+    </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="10dp"
+            android:src="@drawable/icon_password_free_reg"
+            android:id="@+id/imageView2" />
+
+        <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editText_loginpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:hint="Password"
+            android:background="#fff"
+            android:fontFamily="sans-serif-light"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:nextFocusDown="@+id/editText_userID"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="14sp" />
+    </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:background="#2b6299"
+
+        />
+
+
+</LinearLayout>
+</ScrollView>

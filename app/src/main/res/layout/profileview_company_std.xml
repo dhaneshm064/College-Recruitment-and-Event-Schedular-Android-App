@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_student__sign_up"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="#79b5ed"
+    android:orientation="vertical"
+
+    >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/std_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First Name"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                android:textSize="20sp" />
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroup"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:checkedButton="1"
+                >
+
+                <RadioButton
+                    android:id="@+id/maleChkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/femaleChkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textSize="20sp" />
+            </RadioGroup>
+        </LinearLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/std_get_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:enabled="false"
+                android:inputType="textEmailAddress"
+                android:textSize="20sp" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/std_get_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact No"
+                android:inputType="number"
+                android:textSize="20sp" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/std_get_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:inputType="textPostalAddress"
+                android:textSize="20sp" />
+        </android.support.design.widget.TextInputLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/std_get_SSC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="SSC %"
+                    android:inputType="numberDecimal"
+                    android:textSize="20sp"
+                    android:layout_toLeftOf="@+id/sscSpinner"
+                    android:layout_toStartOf="@+id/sscSpinner" />
+            </android.support.design.widget.TextInputLayout>
+            <Spinner
+                android:id="@+id/sscSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:entries="@array/yearsarray"
+                android:gravity="center_vertical"
+                android:textAlignment="center" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/std_get_FSC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="FSC %"
+                    android:inputType="numberDecimal"
+                    android:textSize="20sp"
+                    android:layout_toLeftOf="@+id/fscSpinner"
+                    android:layout_toStartOf="@+id/fscSpinner" />
+            </android.support.design.widget.TextInputLayout>
+            <Spinner
+                android:id="@+id/fscSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:entries="@array/yearsarray"
+                android:gravity="center_vertical"
+                android:prompt="@string/years"
+                android:textAlignment="center" />
+        </RelativeLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/std_get_uni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="University"
+                android:textSize="20sp" />
+
+        </android.support.design.widget.TextInputLayout>
+        <Spinner
+            android:id="@+id/dptSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/dpt"
+            android:prompt="@string/dpt"
+            />
+
+
+    </TableLayout>
+
+</ScrollView>

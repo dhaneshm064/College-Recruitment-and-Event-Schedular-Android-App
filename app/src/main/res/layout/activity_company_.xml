@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_company_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.faizrehman.campus_recruitment_system.ui.Company.Company_Activity">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#77b3e7"
+        android:elevation="6dp"
+        app:tabIndicatorColor="#aabee1"
+        app:tabIndicatorHeight="5dp"
+        app:tabSelectedTextColor="#fffdfe"
+        app:tabTextColor="#000000"
+
+        />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab_layout"
+
+
+        />
+
+</RelativeLayout>

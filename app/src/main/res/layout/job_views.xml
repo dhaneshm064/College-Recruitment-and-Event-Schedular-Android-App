@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/job_name"
+        android:text="Job Title"
+        android:textSize="35dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        />
+    jobtitle;
+    TextView comp_detail,comp_name,comp_email,comp_cat
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/comp_detail"
+        android:text="Company Detail"
+        android:textSize="20dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/comp_namee"
+        android:text="Company Name"
+        android:textSize="20dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/comp_jobemail"
+        android:text="Company Email"
+        android:textSize="20dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/comp_jobcat"
+        android:text="Job Category"
+        android:textSize="20dp"
+
+        />
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:padding="5dp"
+    android:layout_height="match_parent">
+
+
+ <android.support.design.widget.TextInputLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+
+<EditText
+    android:id="@+id/job_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="10dp"
+    android:hint="Job Title"
+    android:background="#fff"
+    android:imeOptions="actionNext"
+    android:inputType="text"
+    android:nextFocusDown="@+id/editText_confirmPassword"
+    android:padding="10dp"
+    android:singleLine="true"
+    android:text=""
+    android:textSize="14sp"/>
+</android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/company_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:hint="Company Name"
+            android:background="#fff"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:nextFocusDown="@+id/editText_confirmPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="14sp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/company_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:hint="City"
+            android:background="#fff"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:nextFocusDown="@+id/editText_confirmPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="14sp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/company_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:hint="Email"
+            android:background="#fff"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:nextFocusDown="@+id/editText_confirmPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="14sp"/>
+    </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categories"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/cat"
+        android:id="@+id/Category"
+        ></Spinner>
+        </LinearLayout>
+</LinearLayout>

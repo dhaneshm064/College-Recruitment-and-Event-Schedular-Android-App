@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+    android:background="#5d96cc"
+        android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+    <LinearLayout
+        android:background="#9ac6ef"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editText_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center_horizontal"
+            android:hint="Email"
+            android:background="#fff"
+            android:fontFamily="sans-serif-light"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:nextFocusDown="@+id/editText_userID"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="14sp" />
+    </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editText_userID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:hint="UserID"
+                android:background="#fff"
+                android:fontFamily="sans-serif-light"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:nextFocusDown="@+id/editText_userID"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="14sp" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editText_fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:hint="First Name"
+                android:background="#fff"
+                android:fontFamily="sans-serif-light"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:nextFocusDown="@+id/editText_userID"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="14sp" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editText_lname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:hint="Last Name"
+                android:background="#fff"
+                android:fontFamily="sans-serif-light"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:nextFocusDown="@+id/editText_userID"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="14sp" />
+        </android.support.design.widget.TextInputLayout> <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editText_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:hint="Password"
+            android:background="#fff"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:nextFocusDown="@+id/editText_confirmPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="14sp"/>
+    </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editText_cpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:background="#fff"
+                android:hint="Confirm Password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:nextFocusDown="@+id/buttonSignUp"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="14sp"  />
+        </android.support.design.widget.TextInputLayout>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:fontFamily="sans-serif-light"
+            android:id="@+id/editGender"
+            android:background="#fff"
+             />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/signup_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="end"
+        android:background="#2b6299"
+        android:padding="10dp"
+        android:text="Sign Up"
+        android:textColor="#fff" />
+
+</LinearLayout>
+    </ScrollView>
